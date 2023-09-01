@@ -8,6 +8,13 @@
 #ifndef Node_h
 #define Node_h
 
-//TODO: define the node that is used for the linked list
+//template<Typename T> helps to define the structure to have a wild datatype when being
+// initialized. This can be helpful for preventing multiple structs that are copycats with the
+// slight variant of changing the datatype for storing the main data.
+template<typename T>
+struct Node {
+    T data;
+    Node<T> *next;
+};
 
 #endif /* Node_h */
